@@ -19,3 +19,8 @@ Retrieves the package from the PrinceXML web site and installs.
   node[:prince][:license_cookbook] = "foo"
 
   include_recipe "prince"
+
+= CREDITS:
+Forked from the Chef community wiki ( http://community.opscode.com/cookbooks/prince )
+by Marcel Cary ( http://community.opscode.com/users/marcel )
+
