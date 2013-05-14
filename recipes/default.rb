@@ -49,8 +49,10 @@ dpkg_package "prince" do
   action :install
 end
 
-cookbook_file "/usr/lib/prince/license/license.dat" do
-  backup 100
-  mode "0444"
-  cookbook node[:prince][:license_cookbook]
+if node[:prince] && node[:prince][:license_cookbook]
+  cookbook_file "/usr/lib/prince/license/license.dat" do
+    backup 100
+    mode "0444"
+    cookbook node[:prince][:license_cookbook]
+  end
 end
