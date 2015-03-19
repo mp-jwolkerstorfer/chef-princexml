@@ -1,3 +1,4 @@
+name             "prince"
 maintainer       "O'Reilly Media, Inc."
 maintainer_email "marcel@oreilly.com"
 license          "Apache 2.0"
